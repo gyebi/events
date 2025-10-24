@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversty Conference | About Us</title>
+    <link rel="stylesheet" href="events.css" class="stylesheet ">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#index.html">Home</li>
+                <li><a href="#about.html" class = "active">About Us</li>
+                <li><a href="#contact-us.html">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

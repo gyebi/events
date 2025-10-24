@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Poppins",sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body {
+  background: linear-gradient(135deg, #f0f5f2, #d6e4ff);
+}
+
+
+header {
+  padding: 20px;
+  margin-left: 10px;;
+  margin-bottom: 30px;
+}
+
+nav{
+  margin-bottom: 0px;
+  display:flex;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-evenly;
+  background-color: #d6e4ff;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  z-index: 1000;
+  background:url(/assets/tropical_forest_withcloud.jpg);
+  background-size: cover;
+}
+
+
+.brand-container {
+  color: #111;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-decoration: none;
+  display:flex;
+  flex-direction: column;
+  line-height: 1;  
+}
+
+.brand-container span{
+
+    color:#00a53f
+   
+}
+
+nav ul{
+
+  width:100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap:25px;
+  font-size: 1.2em;
+  align-items: center;
+
+}
+
+nav li {
+
+  height: 50px;
+}
+
+nav ul li a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+  
+}
+
+
+.sidebar{
+    position: fixed; 
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 10px rgba(0 0 0 0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.sidebar li {
+    width:100%;
+
+}
+
+.sidebar a{
+    width:100%;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #08a82a;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #08a82a;
+  text-shadow: 0 0 8px rgba(8, 168, 42, 0.6);
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a.active {
+  color: #08a82a;
+}
+
+
+/* Hover and active effects */
+nav ul li a:hover {
+  color: 3px solid  #00a53f;
+}
+
+
+
+.material-symbols-outlined.menu {
+  display: none;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+
+/*Mission*/ 
+
+a {
+  color: #08a82a;
+  text-decoration: none;
+  
+}
+
+
+.biodiversity-1 {
+  cursor:auto;
+  margin-top: 100px;
+  padding: 50px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  
+}
+
+.title h4{
+  margin-top: 50px;
+  text-align:center;
+  display:block;
+  text-decoration: none;
+  font-size:2.5em;
+  margin-bottom: 20px;
+
+}
+
+
+.title p{
+
+  max-width: 75%;
+  text-align: center;
+  font-size: 1.2em;
+  justify-self: center;
+  margin-bottom: 80px;
+  color: #111;
+
+
+}
+
+.m-buttons {
+
+  justify-items: center;
+  
+
+}
+
+.m-buttons {
+
+  padding: 20px;
+  border: none;
+  
+  
+}
+
+button{
+
+  background-color: #08a82a;  /* green background */
+  color: white;               /* white text */
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  }
+
+  button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #0cd456;
+  }
+
+button.first-btn{
+
+padding: 20px;
+font-size: 15px;
+font-weight: 500;
+width:223px;
+height: 67px;
+
+}
+
+button.second-btn{
+
+padding: 20px;
+font-size: 15px;
+font-weight: 500;
+width:223px;
+height: 67px;
+
+}
