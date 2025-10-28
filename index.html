@@ -7,6 +7,8 @@
     <title>Biodiversty Conference | Home </title>
     <link rel="stylesheet" href="events.css" class="stylesheet ">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </head>
 
@@ -14,14 +16,17 @@
     <header>
         <nav class="sticky">
             <div class="brand-container"> Biodiversity <span>Conference</span></div>
-            <ul>
+            <ul class="main-menu">
                 <li class="hideOnSmallScreen"><a href="#index.html" class="active">Home</li>
                 <li class="hideOnSmallScreen"><a href="#about.html">About Us</li>
                 <li class="hideOnSmallScreen"><a href="#contact-us.html">Contact Us</li>
-                <li onclick=showSideBar()><span class="material-symbols-outlined menu">menu</span></li>
+
             </ul>
+
+            <span class="material-symbols-outlined menu" onclick=showSideBar()>menu</span>
+
             <ul class="sidebar">
-                <li onclick=showMenu()><span class="material-symbols-outlined close">close</span></li>
+                <li onclick=hideSideBar()><span class="material-symbols-outlined close">close</span></li>
                 <li><a href="#index.html" class="active">Home</li>
                 <li><a href="#about.html">About Us</li>
                 <li><a href="#contact-us.html">Contact Us</li>
@@ -29,21 +34,85 @@
         </nav>
     </header>
 
-    <section class = "biodiversity-1">
+    <section class="biodiversity-1">
         <div class="title">
             <h4>The African Biodiversity Conference </h4>
-            <p>Welcome to Upcoming Conference Alerts, your one-stop destination for staying updated on the latest conferences, workshops, and seminars happening worldwide. Whether you are a professional, researcher, or student, we provide timely and detailed information on academic and business events to help you discover opportunities, expand your knowledge, and grow your network. Our mission is to connect you with the right events, making it easier for you to participate, share knowledge, and stay ahead in your field. Explore Upcoming Conference Alerts today and never miss an opportunity to learn and grow.</p>
+            <p>Welcome to Upcoming Conference Alerts, your one-stop destination for staying updated on the latest
+                conferences, workshops, and seminars happening worldwide. Whether you are a professional, researcher, or
+                student, we provide timely and detailed information on academic and business events to help you discover
+                opportunities, expand your knowledge, and grow your network. Our mission is to connect you with the
+                right events, making it easier for you to participate, share knowledge, and stay ahead in your field.
+                Explore Upcoming Conference Alerts today and never miss an opportunity to learn and grow.</p>
 
         </div>
-    
-         <div class="m-buttons">
+
+        <div class="m-buttons">
             <button class="first-btn">Upcoming Conferences</button>
             <button class="second-btn">Promote Event</button>
 
         </div>
     </section>
 
+    <section class="biodiversity-2">
 
+        <div class="col-50">
+            <div class="text-box">
+                <h4>The Venue</h4>
+                <p>Ghana is wildlife protection and habitat/resource conservation for the sustainable benefits of
+                    present and future generations. The Division therefore educates the public and fringe communities on
+                    the wise use of resources, and managing the protected areas for eco-tourism is one of such uses.
+                    Nature enthusiasts, students, volunteers and researchers have found out how much Ghana offers by way
+                    of wildlife and wildlife habitats some of which offer good opportunities for adventure.</p>
+            </div>
+        </div>
+
+        <div class=" col-50">
+            <div class="container">
+                <img src="/assets/safari_venue.jpg">
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+        function showSideBar() {
+            const sidebar = document.querySelector('.sidebar').classList.add('active');
+            //const sidebar = document.querySelector('.sidebar').classList.add('active');
+
+        }
+
+        function hideSideBar() {
+            const sidebar = document.querySelector('.sidebar')
+                .classList.remove('active');
+        }
+    </script>
+    <footer>
+        <div class="container">
+            <div class = "quick-links">
+                <ul>
+                    <li>
+                        <a href="/"> Home </a>
+                    </li>
+                      <li>
+                        <a href="/"> About Us </a>
+                    </li>
+                      <li>
+                        <a href="/"> Contact Us </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Upcoming Conference Alerts. All rights reserved.</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
