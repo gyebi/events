@@ -4,36 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodiversty Conference | Contact Us</title>
+    <title>Contact | Biodiversity Conference</title>
     <link rel="stylesheet" href="events.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#index.html">Home</li>
-                <li><a href="#about.html">About Us</li>
-                <li><a href="#contact-us.html" class = "active">Contact Us</li>
+        <nav class="sticky">
+            <div class="brand-container"> Biodiversity <span>Conference</span></div>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <span class="material-symbols-outlined menu" onclick="showSideBar()">menu</span>
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><span class="material-symbols-outlined close">close</span></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <section class="contact-section">
 
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <p>Have questions or want to register your interest? Fill the form below:</p>
+
+            <form class="contact-form" action="mailto:info@biodiversityconf.org" method="post" enctype="text/plain">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-image">
+            <div class="card">
+                <img src="assets/Mole_national_Park_wart_hogs.jpg" alt="Climate Change Dialogue">
+            </div>
+
+            <div class="card">
+                <img src="assets/Mole_national_Park_wart_hogs.jpg" alt="Climate Change Dialogue">
+            </div>
+
+            <div class="card">
+                <img src="assets/Mole_national_Park_wart_hogs.jpg" alt="Climate Change Dialogue">
+            </div>
+        </div>
     </section>
 
-    <section>
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2026 African Biodiversity Conference. All rights reserved.</p>
+        </div>
+    </footer>
 
-    </section>
-
-
-    <section>
-
-    </section>
-
-    
+    <script>
+        function showSideBar() { document.querySelector('.sidebar').classList.add('active'); }
+        function hideSideBar() { document.querySelector('.sidebar').classList.remove('active'); }
+    </script>
 </body>
 
 </html>

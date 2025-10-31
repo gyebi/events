@@ -545,3 +545,129 @@ footer {
     height: 350px;
   }
 }
+
+
+
+/* === CONTACT FORM === */
+.contact-section {
+  margin-top: 100px;
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #f5faff;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  text-align: left;
+  flex-wrap: nowrap;
+}
+
+.contact-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: left;
+}
+
+.contact-section h2 {
+  color: #08a82a;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #08a82a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  width: fit-content;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+label{
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #111;
+}
+
+.contact-form button:hover {
+  background-color: #06c057;
+}
+
+
+.contact-image {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  align-items: center;
+  
+}
+
+.contact-image .card {
+  position:relative;           /* allows overlap */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center the stack */
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 400px;
+  border: #00a53f 4px solid;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* tilt each image slightly in different directions */
+.contact-image .card:nth-child(1) {
+  transform: translate(-60%, -50%) rotate(-6deg);
+  z-index: 1;
+}
+.contact-image .card:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(4deg);
+  z-index: 2;
+}
+.contact-image .card:nth-child(3) {
+  transform: translate(-40%, -50%) rotate(-2deg);
+  z-index: 3;
+}
+
+/* hover effect to bring to front */
+.contact-image .card:hover {
+  z-index: 10;
+  transform: translate(-50%, -50%) scale(1.50) rotate(0deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.contact-image .card:nth-child(1) { width: 220px; }
+.contact-image .card:nth-child(2) { width: 240px; }
+.contact-image .card:nth-child(3) { width: 210px; }
