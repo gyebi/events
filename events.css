@@ -62,7 +62,7 @@ nav ul{
   display: flex;
   justify-content: flex-end;
   gap:25px;
-  font-size: 0.6em;
+  font-size: 0.9em;
   align-items: center;
 
 }
@@ -76,7 +76,7 @@ nav ul li a {
   position: relative;
   color: black;
   text-decoration: none;
-  font-size: 0.5em;
+  font-size: 0.6em;
   font-weight: 500;
   padding: 8px 12px;
   transition: color 0.3s ease;
@@ -348,4 +348,196 @@ height: 80px;
   width: 100%;
   height:100%;
   object-fit: cover;
+}
+
+
+/* === FOOTER STYLING === */
+footer {
+  background-color: #d6e4ff;
+  color: #111;
+  padding: 50px 20px 0;
+  margin-top: 100px;
+  font-size: 0.9em;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container div {
+  flex: 1 1 220px;
+}
+
+.footer-about h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.footer-about span {
+  color: #00a53f;
+}
+
+.footer-about p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+  color: #00a53f;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #08a82a;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+}
+
+.footer-social .social-icons a {
+  display: inline-block;
+  color: #08a82a;
+  margin-right: 12px;
+  font-size: 1.3em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #00a53f;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #c8d9ff;
+  margin-top: 40px;
+  font-size: 0.85em;
+}
+
+/* Responsive footer layout for mobile */
+@media (max-width: 798px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container div {
+    margin-bottom: 25px;
+  }
+
+  .footer-social .social-icons a {
+    margin: 0 8px;
+  }
+}
+
+
+/* === UPCOMING CONFERENCES SECTION === */
+.biodiversity-3 {
+  padding: 60px 50px;
+  min-height: 100vh; /* same height as other sections */
+  background-color: #fff;
+   align-items: center;
+}
+
+.section-title {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #08a82a;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f7faff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
+.card-info {
+  height: 25%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info h5 {
+  font-size: 1em;
+  color: #111;
+  margin: 0;
+}
+
+.card-info p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 3px 0;
+}
+
+.card-info span {
+  font-size: 0.9em;
+  color: #08a82a;
+  font-weight: 600;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 798px) {
+  .biodiversity-3 {
+    padding: 40px 20px;
+  }
+
+  .card {
+    height: 350px;
+  }
 }
